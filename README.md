@@ -50,12 +50,34 @@ API_PORT=5000
 }
 ```
 
-## 4. Chạy ứng dụng
+## 4. Chạy backend
 ```
 # Backend (port 5000)
 dotnet run --urls="http://localhost:5000"
+```
+API chạy tại: http://localhost:5000
 
+## 5. Chạy Frontend
+
+Cài dependencies
+```
+cd frontend
+npm install
+```
+
+Tạo file .env cho FE
+```
+frontend/.env
+```
+Nội dung:
+```
+VITE_API_URL=http://localhost:5000
+```
+
+Chạy FE
+```
 # Frontend (port 5173)
 npm run dev
 ```
+API chạy tại: http://localhost:5173
 
